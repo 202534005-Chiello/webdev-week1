@@ -59,15 +59,22 @@ p {
     margin: auto;
 }
 
+/* Navigasi */
+nav {
+    margin-block: var(--space-medium);
+    text-align: center;
+}
 
 .nav-link {
+    display: inline-block;
     color: var(--color-primary);
-    padding: var(--space-1);
+    padding: var(--space-small);
     text-underline-offset: 0.2em;
 }
 
 .nav-link:hover {
     text-decoration-thickness: 0.15em;
+    color: #73b535;
 }
 
 .nav-link:active {
