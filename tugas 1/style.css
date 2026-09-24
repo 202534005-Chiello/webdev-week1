@@ -5,54 +5,60 @@
 }
 
 :root {
-    --color-primary: #1d4ed8;
+    --color-primary: #d16868;
     --color-text: #1f2937;
-    --color-muted: #4b5563;
-    --color-surface: #ffffff;
-    --color-border: #d1d5db;
+    --color-surface: #d16868;
+    --color-border: #35383d;
     --color-focus: #f59e0b;
 
-    --space-1: 0.5rem;
-    --space-2: 1rem;
-    --space-3: 1.5rem;
-
+    --space-small: 1rem;
+    --space-medium: 1rem;
+    --space-large: 1.5rem;
     --radius: 0.5rem;
 }
 
 body {
     margin: 0;
-    padding: 1rem;
-    color: var(--color-text);
-    background: #f8fafc;
-    font-family: system-ui, sans-serif;
-    line-height: 1.6;
-}
-
-body {
-    max-width: 70rem;
+    padding: var(--space-medium);
+    max-width: 80em;
     margin-inline: auto;
+
+    color: var(--color-text);
+    background: #ffffff;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    line-height: 1.5;
 }
 
 header,
 main,
 footer {
     width: 100%;
-    margin-inline: auto;
+    margin: auto;
+}
+
+/* Judul */
+h1,
+h2 {
+    line-height: 1.2;
+    text-align: center;
+}
+
+ol,
+ul {
+    width: fit-content;
+    margin: 0 auto;
 }
 
 main {
-    padding-block: var(--space-3);
-}
-
-h1,
-h2,
-h3 {
-    line-height: 1.2;
+    padding-block: var(--space-large);
 }
 
 p {
-    max-width: 65ch;
+    max-width: 100ch;
+    text-align: justify;
+    margin: auto;
 }
+
 
 .nav-link {
     color: var(--color-primary);
