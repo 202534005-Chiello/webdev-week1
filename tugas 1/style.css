@@ -114,21 +114,15 @@ img {
     margin-block: var(--space-medium);
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th,
-td {
-    padding: var(--space-1);
-    border: 1px solid var(--color-border);
-    text-align: start;
+/* Form */
+form {
+    max-width: 50rem;
+    margin: auto;
 }
 
 label {
     display: block;
-    margin-block-start: var(--space-2);
+    margin-block-start: var(--space-medium);
     font-weight: 600;
 }
 
@@ -147,8 +141,12 @@ textarea {
     border-radius: 0.25rem;
 }
 
+textarea {
+    min-height: 8rem;
+}
+
 button {
-    margin-block-start: var(--space-2);
+    margin-block-start: var(--space-medium);
     padding: 0.75rem 1rem;
     color: #ffffff;
     background: var(--color-primary);
@@ -157,29 +155,20 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background: #73b535;
+}
+
 input:focus-visible,
 textarea:focus-visible,
 button:focus-visible {
-    outline: 3px solid var(--color-focus);
-    outline-offset: 3px;
+    outline: 5px solid var(--color-focus);
+    outline-offset: 5px;
 }
 
-nav {
-    margin-block: var(--space-2);
-}
-
-.nav-link {
-    display: inline-block;
-}
-
-form {
-    max-width: 32rem;
-}
-
-p {
-    color: green;
-}
-
-.card p {
-    color: purple;
+/* Footer */
+footer {
+    margin-top: var(--space-large);
+    text-align: center;
+    margin: auto;
 }
